@@ -1,0 +1,18 @@
+class RecursiveFibonacci {
+	int n ;
+	int fibonacci(int n){
+		if ( n == 0) return 0;
+		else if (n == 1) return 1 ;
+		else return (fibonacci(n-1) + fibonacci(n-2));
+
+	}
+
+	public static void main(String args []){
+		RecursiveFibonacci f = new RecursiveFibonacci();
+
+		int fn = f.fibonacci(Integer.parseInt(args[0])) ;
+		System.out.println(args[0]+"th fibonacci number is "+fn);
+	}
+}
+
+
